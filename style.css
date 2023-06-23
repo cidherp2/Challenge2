@@ -1,0 +1,303 @@
+:root {
+    --favefont: monospace;
+    --granfuente: x-large;
+    --colorDefuente: rgb(141, 71, 206);
+    --sombra: 0 0 5px rgb(0 0 0 / 50%);
+}
+
+header {
+    background-color: rgb(255, 255, 255, .97);
+    box-sizing: border-box;
+    display: block;
+    margin-top: auto;
+    box-shadow: var(--sombra);
+    border-bottom: solid rgb(224, 222, 222) .5px;
+    height: 70px;
+    border-color: brown;
+
+}
+
+#navHead {
+    margin-top: 0;
+    margin-left: 0;
+    padding-right: 20px;
+    border-color: brown;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li:nth-child(2) {
+    list-style: none;
+    padding-left: 15px;
+}
+
+nav ul li {
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 70px;
+    margin-right: 5%;
+
+
+}
+
+nav ul li:hover {
+    color: var(--colorDefuente);
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+.headerNav {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    box-sizing: content-box;
+    justify-content: flex-end;
+    margin-left: 70%;
+
+
+
+}
+
+#logo {
+
+    display: flex;
+    max-height: 70px;
+    height: auto;
+    border: none;
+    float: left;
+    align-items: center;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: 250px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#fotoAlex {
+    width: 30%;
+    height: auto;
+    display: flex;
+    box-shadow: var(--sombra);
+
+}
+
+
+
+.sectionParagraph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2%;
+}
+
+.sectionParagraph p:nth-child(2) {
+    margin: 0;
+    display: inline-block;
+    color: chocolate;
+    font-size: var(--granfuente);
+    font-family: var(--favefont);
+}
+
+.sectionParagraph p:nth-child(1) {
+    padding-top: 1.5%;
+    margin: 0;
+    display: inline-block;
+    font-size: var(--granfuente);
+    font-family: var(--favefont);
+}
+
+.socials {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+section ul li:nth-child(2) {
+
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.socialFoto {
+    width: 50px;
+
+}
+
+.socialButton:hover {
+    opacity: .3;
+
+}
+
+.sectionTitle {
+    display: flex;
+    margin-right: 0%;
+    width: 50%;
+    height: auto;
+    justify-content: center;
+    box-shadow: var(--sombra);
+    font-family: var(--favefont);
+    flex-wrap: wrap;
+    font-size: var(--granfuente);
+    padding-left: 3%;
+}
+
+.muevetitulos {
+    display: flex;
+    justify-content: center;
+}
+
+.link-img {
+    width: 30%;
+}
+
+.link-img:first-child:hover{
+    width: 35%;
+}
+
+.cuadrada:hover {
+    opacity: .5;
+    border-radius: 50%;
+}
+
+
+.cuadrada:first-child:hover{
+    object-fit: cover;
+    border-radius: 0%;
+    aspect-ratio: 1/1;
+    width: -webkit-fill-available;
+}
+
+.cuadrada {
+    object-fit: cover;
+    border-radius: 5%;
+    aspect-ratio: 1/1;
+    width: -webkit-fill-available;
+}
+
+
+
+#listaFotosTrabajos {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    /**
+    Se reemplazaron estas 2 por fleex flow
+    flex-direction: row;
+    flex-wrap: wrap;
+    **/
+    justify-content: space-evenly;
+    margin-top: 5%;
+    margin: 5%;
+
+}
+
+
+#cuadrada2 {
+    margin-top: 3%;
+    border: 1px solid rgb(0, 0, 0, .2);
+
+}
+
+
+
+.barraNav:link {
+    text-decoration: none;
+    color: black;
+}
+
+.barraNav:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.barraNav:active {
+    text-decoration: none;
+    color: black;
+}
+
+.barraNav:hover {
+    color: var(--colorDefuente);
+}
+
+#aboutMe {
+    position: absolute;
+    margin-top: 3%;
+    margin-left: 9%;
+    width: 50%;
+    height: auto;
+    box-shadow: var(--sombra);
+    padding: 1%;
+
+}
+
+#fotobio {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+
+#imagendealex2 {
+    width: 15%;
+    box-sizing: border-box;
+    margin-left: 70%;
+    margin-top: 3%;
+
+}
+
+
+#trabajoscuadrados{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    #fotoAlex {
+        width: 60%;
+    }
+
+    #imagendealex2 {
+        width: 30%;
+    }
+
+    #listaFotosTrabajos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navHead {
+        flex-direction: column;
+        background-color: rgb(138, 43, 226, .2);
+    }
+
+    #cuadrada1 {
+
+        margin-top: 3%;
+    }
+
+    .link-img {
+        width: 100%;
+    }
+}
